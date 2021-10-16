@@ -19,7 +19,10 @@ for (let i = 0; i < n; i++) {
     stringLine += '*'    
     console.log(stringLine)
 }
-*/
+
+
+
+TERCEIRO EXERCICIO
 
 let inverseIndex = n
 
@@ -35,4 +38,6 @@ for (let i = 0; i < n; i++) {
     inverseIndex -= 1
     stringLine = ''
 }
+
+QUARTO EXERCICIO */
 
