@@ -1,0 +1,9 @@
+*{
+    text-align: center;
+}
+
+.form-control{
+    max-width: 20%;
+    display: inline;
+
+}

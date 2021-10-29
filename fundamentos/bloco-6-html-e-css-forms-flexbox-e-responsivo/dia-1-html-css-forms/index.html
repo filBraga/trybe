@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="container">
+    <form>
+        <fieldset>
+          <legend>Aplicar curriculo</legend>
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="fname" class="form-control"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" class="form-control"><br><br>
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" class="form-control" onkeypress="$(this).mask('000.000.000-00');"><br><br>
+
+          <label for="adress">Endereço</label>
+          <input type="adress" id="adress" name="adress" class="form-control"><br><br>
+
+
+          <label for="city">Cidade</label>
+          <input type="city" id="city" name="city" class="form-control"><br><br>
+
+          <select class="form-control" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">MG</option>
+            <option value="2">SP</option>
+            <option value="3">RJ</option>
+          </select><br><br>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Apartamento
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Casa
+            </label>
+          </div><br><br>
+          
+
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</html>
