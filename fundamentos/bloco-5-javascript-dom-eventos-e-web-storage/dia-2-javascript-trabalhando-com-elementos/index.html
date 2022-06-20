@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 1
+
+      let bodyItem = document.querySelector('body');
+
+      let h1Text = document.createElement('h1');
+      h1Text.innerText = 'Exercício 5.2 - JavaScript DOM';
+      bodyItem.appendChild(h1Text);
+
+      // 2
+
+      let mainItem = document.createElement('main');
+      mainItem.className = 'main-content';
+      bodyItem.appendChild(mainItem);
+
+      // 3
+      let sectionItem = document.createElement('section');
+      sectionItem.className = 'section-content';
+      mainItem.appendChild(sectionItem);
+
+      // 4
+      let parItem = document.createElement('p');
+      parItem.className = 'section-content';
+      sectionItem.appendChild(parItem);
+      parItem.innerText = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, magni.'
+
+      // 5
+      let sectionLeftItem = document.createElement('section');
+      sectionLeftItem.className = 'left-content';
+      mainItem.appendChild(sectionLeftItem);
+
+          // 7
+      let imgLeft = document.createElement('img');
+      imgLeft.src = 'https://picsum.photos/200';
+      imgLeft.className = 'small-image';
+      sectionLeftItem.appendChild(imgLeft);
+
+      // 6
+      let sectionRightItem = document.createElement('section');
+      sectionRightItem.className = 'right-content';
+      mainItem.appendChild(sectionRightItem)
+
+          //8
+      const ulList = document.createElement('ul');
+      sectionRightItem.appendChild(ulList)
+
+      const numsListed = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let num in numsListed) {
+          const elementoLi = document.createElement('li');
+          elementoLi.innerHTML = numsListed[num];
+          sectionRightItem.appendChild(elementoLi);
+      }
+
+      //9
+      for (let i = 1; i <= 3; i += 1) {
+        const h3element = document.createElement('h3');
+        h3element.innerHTML = 'h3 numero ' + i;
+        mainItem.appendChild(h3element);
+      }
+
+    
+    </script>
+  </body>
+</html>
