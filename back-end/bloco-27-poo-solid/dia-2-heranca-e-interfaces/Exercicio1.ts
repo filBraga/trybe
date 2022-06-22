@@ -1,4 +1,4 @@
-class Person2 {
+export default class Person2 {
 
   private _name: string;
   private _birthDate: string;
@@ -60,12 +60,8 @@ const personA: Person2 = new Person2('Fil', '1993-08-31T00:00:00.000Z')
 // sudo npm install -g ts-node
 
 console.log(personA.variablesMethod());
-
 personA.name = 'F'; // This will get an error
 personA.name = 'Filipe'; //
-
 console.log(personA.variablesMethod());
-
 personA.birthDate = '2222-08-31T00:00:00.000Z' // This will get an error
-
 console.log(personA.variablesMethod());
