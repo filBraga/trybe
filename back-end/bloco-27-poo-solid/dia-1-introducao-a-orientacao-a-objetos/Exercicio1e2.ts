@@ -1,4 +1,4 @@
-class Person {
+class Person1 {
 
   _registration: number;
   _name: string;

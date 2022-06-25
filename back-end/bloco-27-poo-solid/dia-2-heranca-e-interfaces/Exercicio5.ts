@@ -4,25 +4,23 @@ import Employee from "./Exercicio3";
 
 class Teacher extends Person2 implements Employee {
   private _subject: Subject;
-  private _enrollment: string;
-  private _examsGrades: number[];
-  private _worksGrades: number[];
+  private _registration: string;
+  private _salary: number;
+  private _admissionDate: Date;
 
-  constructor(n: string, bD: string, e: string, eG: number[], wG: number[], s: Subject) {
-    super(n, bD)
-    this._subject = s
-    this._enrollment = e
-    this._examsGrades = eG
-    this._worksGrades = wG
+  constructor(name: string, birthDate: string, salary: number, subject: Subject) {
+    super(name, birthDate)
+    this._subject = subject;
+    this._registration = this.generateRegistration()
+    this._salary = salary
+    this._salary =
+    this._admissionDate =
+
   }
 
-  
-  public get subject() : string {
-    return this._subject
+  generateRegistration(): string {
+    return 'This is hard code Reg';
   }
-  
-  public set subject(v : Subject) {
-    this._subject = v;
-  }
+
   
 }
