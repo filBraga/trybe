@@ -1,4 +1,4 @@
-export default interface Employee {
+export default interface IEmployee {
   _registration: string;
   _salary: number;
   _admissionDate: Date;
