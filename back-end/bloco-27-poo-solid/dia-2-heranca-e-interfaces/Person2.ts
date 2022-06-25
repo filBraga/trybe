@@ -1,4 +1,4 @@
-import Person2 from './Exercicio1'
+import Person2 from './Person'
 
 class Student extends Person2 {
   private _enrollment: string;

@@ -1,7 +1,9 @@
-import Person2 from "./Exercicio1";
-import Subject from './Exercicio4'
-import Employee from "./Exercicio3";
-class Teacher extends Person2 implements Employee {
+import Person2 from "./Person";
+import Subject from './Subject'
+import Employee from "./IEmployee";
+
+
+export default class Teacher extends Person2 implements Employee {
   private _subject: Subject;
   _registration: string;
   _salary: number;
