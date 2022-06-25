@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  },
+  "name": "bloco-27-poo-solid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

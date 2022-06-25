@@ -11,8 +11,9 @@ class Order {
   name: string;
   price: number;
 
-  constructor(n: string) {
+  constructor(n: string, p:number) {
     this.name = n;
+    this.price = p;
   }
 
   method(){
